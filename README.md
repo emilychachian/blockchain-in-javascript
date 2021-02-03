@@ -10,7 +10,9 @@ You can interact with the blockchain through an API/server and all changes (mini
 * run `npm run node_3` to launch node#3 at localhost:3003
 * run `npm run node_4` to launch node#4 at localhost:3004
 * run `npm run node_5` to launch node#5 at localhost:3005
-3. Install Postman and do a POST to localhost:3001/register-and-broadcast-node with the following request body `{ "newNodeUrl": "http://localhost:PORT" }`. Replace PORT by the port of the node (3002 to 3005), and do this for all of the ports. 
+3. Install [Postman](https://www.postman.com/) and do a POST to localhost:3001/register-and-broadcast-node with the following request body: \
+`{ "newNodeUrl": "http://localhost:PORT" }`. \
+Replace `PORT` by the port of the node (`3002` to `3005`). Do this for all of the ports. 
 
 After this, you will be able to create transactions and mine blocks.
 
@@ -21,7 +23,7 @@ On Postman, do a GET request to http://localhost:3001/blockchain
 
 ### How can I create and broadcast transactions?
 `POST /transaction/broadcast`\
-On Postman, do a POST request to http://localhost:3002/transaction/broadcast with a request body. You can follow this example: \
+On Postman, do a POST request to http://localhost:3002/transaction/broadcast with a request body that contains the amount that is being sent, the address of the sender and the address of the recipient. You can follow this example: \
 `{ 
 "amount": 10, 
 "sender": "AAAAAABBBB", 
