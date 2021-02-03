@@ -6,10 +6,10 @@ You can interact with the blockchain through an API/server and all changes (mini
 1. Clone the project and install its dependencies (`npm install`)
 2. Open five terminals and start a node on each of them: 
 * run `npm run node_1` to launch node#1 at localhost:3001
-* run `npm run node_2` to launch node#1 at localhost:3002
-* run `npm run node_3` to launch node#1 at localhost:3003
-* run `npm run node_4` to launch node#1 at localhost:3004
-* run `npm run node_5` to launch node#1 at localhost:3005
+* run `npm run node_2` to launch node#2 at localhost:3002
+* run `npm run node_3` to launch node#3 at localhost:3003
+* run `npm run node_4` to launch node#4 at localhost:3004
+* run `npm run node_5` to launch node#5 at localhost:3005
 3. Install Postman and do a POST to localhost:3001/register-and-broadcast-node with the following request body `{ "newNodeUrl": "http://localhost:PORT" }`. Replace PORT by the port of the node (3002 to 3005), and do this for all of the ports. 
 
 After this, you will be able to create transactions and mine blocks.
